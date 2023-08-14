@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bryan's Contact</title>
+<link rel="icon" href="Images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="index.html" class="w3-bar-item w3-button"><img src="Images/logo.png" width="121" height="43"></div></a>
+    <div class="icon" src="Images/logo.png"></div>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Main</a>
+      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+      <a href="contacts.html" class="w3-bar-item w3-button">Contacts</a>
+    </div>
+  </div>
+</div>
+
+ <!-- Contact Section -->
+ <div class="w3-container w3-padding-64" id="contact">
+  <h1>Contact</h1><br>
+  <p>Please complete our Enquiry Form to request further information</p>
+  
+  <form action="thankyou.php" target="_self">
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="First Name"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Last Name" required name="Last Name"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email adress"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message Subject" required name="Message Subject"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message Body"></p>
+    <p><button class="w3-button w3-light-grey w3-section" type="submit">SUBMIT</button></p>
+    
+  </form>
+
+  <div id="successMessage" class="w3-padding-16" style="display: none;"></div>
+
+  <p class="w3-text-blue-grey w3-large"><b>76 Devonshire St, Surry Hills NSW     | 02 9211 1234 | Mon - Fri: 6:00 to 14:30, Sat-Sun: 7:00 to 15:00</b></p><br>
+  <p class="w3-text-blue-grey w3-large"><b>451 Pitt St, Haymarket Sydney, NSW    | 02 9262 5678 | Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</b></p><br>
+  <p class="w3-text-blue-grey w3-large"><b>31 Alfred Street, Circular Quay, NSW  | 02 8971 9101 | Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</b></p><br>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+<p> @ <span id="currentYear"></span> Bryan's Cafe<a href="https://www.w3schools.com/w3css/default.asp" title="Bryan's Cafe" target="_blank" class="w3-hover-text-green"></a></p>
+<div> <a href="policy.html" class="w3-button">Privacy Police</a></div>
+</footer>
+
+<script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+  </script>
+  
+
+</body>
+</html>

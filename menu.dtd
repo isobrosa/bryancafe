@@ -1,0 +1,11 @@
+<!DOCTYPE menu [
+  <!ELEMENT menu (section+)>
+  <!ELEMENT section (item+)>
+  <!ELEMENT item (title, name, description, price)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ATTLIST section title CDATA #REQUIRED>
+]>
+

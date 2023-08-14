@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.w3-row {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.w3-padding-64 {
+  padding: 64px;
+}
+
+.w3-center {
+  text-align: center;
+}
+
+.w3-text-grey {
+  color: #888;
+}
+
+.w3-round {
+  border-radius: 50%;
+}
+
+.w3-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.w3-opacity-min {
+  opacity: 0.6;
+}
